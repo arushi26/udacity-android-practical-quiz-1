@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_vintage"
+    tools:context="com.example.udacitypracticalquiz1.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/label_username"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="80dp"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="15dp"
+        android:paddingStart="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/label_email"
+        android:layout_below="@id/edit_username"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:paddingStart="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_about"
+        android:layout_below="@id/edit_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/label_about"
+        android:layout_marginTop="10dp"
+        android:inputType="textLongMessage"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_comment"
+        android:drawablePadding="15dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_about"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_next"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_next"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
